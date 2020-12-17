@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyles from "./style-utils/global.styles";
+import CustomButton from "./components/CustomButton/CustomButton.component.jsx";
+import CTABox from "./components/CTABox/CTABox.component.jsx";
+
+import Img1 from "./assets/ezgif-3-dca61092e9f3.jpg";
+
+const TestComponent = () => (
+	<div>
+		<h1>TESTING COMPONENT</h1>
+		<button>Click Here</button>
+	</div>
+);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<GlobalStyles />
+			<h2>Hello World</h2>
+			<CustomButton>Click me</CustomButton>
+			<CTABox
+				Component={TestComponent}
+				title="Hello World"
+				image={Img1}
+				orientation="left"
+			/>
+		</>
+	);
 }
 
 export default App;
