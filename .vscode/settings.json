@@ -6,5 +6,6 @@
 		"src/reportWebVitals.js": true,
 		"README.md": true,
 		"src/styles/ghost.*": true
+		".eslintcache": true
 	}
 }

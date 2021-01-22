@@ -6,4 +6,4 @@ The main usage is to create a number of reusable components which I can then sto
 
 Perhaps I will eventually even assemble them all in an npm package. But perhaps having the components in their own project on github and using git clone will be sufficient for my personal usage, for now.
 
-I'm also experimenting with different settings and out of the box configuration I can write scripts for.
+I'm also experimenting with different settings and out of the box configurations I can write scripts for.
